@@ -1,0 +1,76 @@
+# Learn command line
+
+Please follow and complete the free online [Command Line Crash Course
+tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehardway.org/book/) or [Codecademy's Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line). These are helpful tutorials. Each "chapter" focuses on a command. Type the commands you see in the _Do This_ section, and read the _You Learned This_ section. Move on to the next chapter. You should be able to go through these in a couple of hours.
+
+---
+
+### Q1.  Cheat Sheet of Commands  
+
+Here's a list of items with which you should be familiar:  
+* show current working directory path
+* creating a directory
+* deleting a directory
+* creating a file using `touch` command
+* deleting a file
+* renaming a file
+* listing hidden files
+* copying a file from one directory to another
+
+Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
+
+> > mv : moves file type 'mv old_folder/file.txt new_folder'
+touch :creates new file type 'folder/new_file.txt
+rm : removes file
+rmdir :removes directory
+cat :displays content of file (eg, txt) within the terminal 
+echo :allows you to create content and save it in file. (e.g., "I am learning" > file1.txt
+find . -name "*.txt" -print : lets you look for file ending in '.txt'
+find . -type d -name "SWC*" : finds the path to a file starting with SWC
+command + n : opens new terminal 
+control+c :allows you to abort process
+control+d:closes file
+grep new *.txt : prints files that contain the word 'new'
+man xargs : gives documentation on function 'xargs'
+---
+
+### Q2.  List Files in Unix   
+
+What do the following commands do:  
+`ls`  
+`ls -a`  
+`ls -l`  
+`ls -lh`  
+`ls -lah`  
+`ls -t`  
+`ls -Glp`  
+
+> > ls :lists all files in directory
+ls -a :includes all entries; appears to list them all alphabetically
+ls -l : displays long format listing 
+ls -lh :long format with file size
+ls -lah : includes all entries in readable, long format   
+---
+
+### Q3.  More List Files in Unix  
+
+Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
+
+> > ls -p :displays directories with /
+ls -t : displays newest files (based on timestamp)
+ls -r : displays in reverse order
+ls -R : displays subdirectories
+ls -d : displys only diectories 
+---
+
+### Q4.  Xargs   
+
+What does `xargs` do? Give an example of how to use it.
+
+> > allows you to build and execute commans and apply given command to series of items, in order
+
+e.g., code below allows you to delete all files with 2014 in its name,  rather than doing it 
+find . -name "*2014*" | xargs rm -rf
+
+ 
+
