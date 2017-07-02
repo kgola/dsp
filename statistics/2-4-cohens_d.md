@@ -8,6 +8,7 @@ CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 resp = nsfg.ReadFemResp()
 list(resp)
 
+
 hist = thinkstats2.Hist(resp.totincr)
 thinkplot.Hist(hist, label='totincr')
 
