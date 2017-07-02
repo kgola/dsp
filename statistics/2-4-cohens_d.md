@@ -12,6 +12,7 @@ list(resp)
 hist = thinkstats2.Hist(resp.totincr)
 thinkplot.Hist(hist, label='totincr')
 
+
 hist = thinkstats2.Hist(resp.age_r)
 thinkplot.Hist(hist, label='age_r')
 
